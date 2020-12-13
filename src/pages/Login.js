@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-
 import logo from "../assets/logo.svg";
+
+import { loginUrl } from "../utils/spotify";
 
 const LoginContainer = styled.div`
   height: 100vh;
@@ -44,6 +45,7 @@ const LoginLink = styled.a`
   color: white;
   font-weight: 600;
   font-size: 1.6rem;
+  text-decoration: none;
   &:hover {
     background-color: #22f66e;
     transition: 0.2s;
@@ -57,7 +59,7 @@ const Login = () => {
         <LogoImage src={logo} alt="logo" />
         <LogoText>Spotify Games</LogoText>
         <LoginButtonDiv>
-          <LoginLink>Log in with Spotify</LoginLink>
+          <LoginLink href={loginUrl}>Log in with Spotify</LoginLink>
         </LoginButtonDiv>
       </LoginMain>
     </LoginContainer>
