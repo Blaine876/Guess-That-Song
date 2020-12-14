@@ -15,8 +15,8 @@ import {
 import { getToken } from "../utils/spotify";
 
 const Routes = () => {
-  // const myToken = JSON.stringify(getToken());
-  // console.log(`my token is: ${myToken}`);
+  const myToken = JSON.stringify(getToken());
+  console.log(`my token is: ${myToken}`);
 
   return (
     <Switch>

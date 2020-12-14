@@ -1,6 +1,7 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 const redirectUri = "http://localhost:3000/games";
 const clientID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+
 console.log(`Client ID is ${clientID}`);
 
 const scopes = [
